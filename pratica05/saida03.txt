@@ -8,3 +8,63 @@
 
 
  -> Encontrei uma data
+
+
+ -> Encontrei uma hora
+
+
+ -> Encontrei uma hora
+
+
+ -> Encontrei uma hora
+
+
+ -> Encontrei uma hora
+
+
+ -> Encontrei um telefone
+
+
+ -> Encontrei um telefone
+
+
+ -> Encontrei um telefone
+
+
+ -> Encontrei um telefone
+
+
+ -> Encontrei um cpf
+
+
+ -> Encontrei um cpf
+
+
+ -> Encontrei um cpf
+
+
+ -> Encontrei um cpf
+
+
+ -> Encontrei um email
+
+
+ -> Encontrei um email
+
+
+ -> Encontrei um email
+
+
+ -> Encontrei um email
+
+
+ -> Encontrei uma url
+
+
+ -> Encontrei uma url
+
+
+ -> Encontrei uma url
+
+
+ -> Encontrei uma url
