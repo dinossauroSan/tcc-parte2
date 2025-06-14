@@ -5,3 +5,43 @@
 30/11/1999
 
 31/12/2099
+
+00:00
+
+09:15
+
+12:30
+
+23:59
+
+55+ (011) 9 1234-5678
+
+55+ (031) 9 8765-4321
+
+44+ (019) 9 1111-2222
+
+33+ (027) 9 3333-4444
+
+123.456.789-00
+
+987.654.321-99
+
+000.111.222-33
+
+111.222.333-44
+
+joao.silva@gmail.com
+
+ana_maria123@empresa.org
+
+teste@ufmg.br
+
+contato+info@site.co
+
+https://www.google.com
+
+http://ufmg.br
+
+https://meusite.org/pagina/sobre
+
+https://docs.exemplo.com.br/arquivo.html?ver=1&tipo=pdf
