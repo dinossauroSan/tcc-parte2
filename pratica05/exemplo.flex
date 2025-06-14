@@ -23,12 +23,13 @@ letra = [a-zA-Z]
 numero = [0-9]
 digito = {numero}+
 identificador = {letra}({letra}|{numero})*
-
+data = (0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[0-2])[/]{numero}+
+// Dia 01 até dia 31, mes 01 até 12, ano 0 até infinito
 %%
 
 /* Regras e Ações Associadas: seção de instruções para 
  * o analisador léxico. 
  */
 
-{digito}        {System.out.println(" -> Encontrei um digito");}
-{identificador} {System.out.println(" -> Encontrei um identificador");}
+
+{data} {System.out.println(" -> Encontrei uma data");}

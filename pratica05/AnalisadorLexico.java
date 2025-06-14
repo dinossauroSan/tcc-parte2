@@ -41,7 +41,8 @@ class AnalisadorLexico {
    * Translates characters to character classes
    */
   private static final String ZZ_CMAP_PACKED = 
-    "\60\0\12\2\7\0\32\1\6\0\32\1\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uff95\0";
+    "\57\0\1\6\1\2\1\5\1\3\1\4\6\1\7\0\32\0\6\0"+
+    "\32\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uff95\0";
 
   /** 
    * Translates characters to character classes
@@ -54,10 +55,10 @@ class AnalisadorLexico {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\1\1\1\2\1\3";
+    "\1\0\4\1\6\0\1\2";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[4];
+    int [] result = new int[12];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -82,10 +83,11 @@ class AnalisadorLexico {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\3\0\6\0\11";
+    "\0\0\0\7\0\16\0\25\0\34\0\43\0\52\0\61"+
+    "\0\70\0\77\0\106\0\106";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[4];
+    int [] result = new int[12];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -108,10 +110,14 @@ class AnalisadorLexico {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\2\1\3\1\4\4\0\2\3\2\0\1\4";
+    "\2\2\1\3\1\4\1\5\1\4\1\2\10\0\1\6"+
+    "\1\0\3\6\2\0\5\6\3\0\1\6\2\0\1\6"+
+    "\7\0\1\7\2\0\1\10\2\0\1\11\2\0\1\12"+
+    "\1\0\3\12\3\0\2\12\1\0\1\12\7\0\1\13"+
+    "\1\0\5\14\1\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[12];
+    int [] result = new int[77];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -149,10 +155,10 @@ class AnalisadorLexico {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\1\11\2\1";
+    "\1\0\1\11\3\1\6\0\1\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[4];
+    int [] result = new int[12];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -248,7 +254,7 @@ class AnalisadorLexico {
     char [] map = new char[0x110000];
     int i = 0;  /* index in packed string  */
     int j = 0;  /* index in unpacked array */
-    while (i < 46) {
+    while (i < 56) {
       int  count = packed.charAt(i++);
       char value = packed.charAt(i++);
       do map[j++] = value; while (--count > 0);
@@ -602,17 +608,12 @@ class AnalisadorLexico {
             { System.out.print(yytext());
             } 
             // fall through
-          case 4: break;
+          case 3: break;
           case 2: 
-            { System.out.println(" -> Encontrei um identificador");
+            { System.out.println(" -> Encontrei uma data");
             } 
             // fall through
-          case 5: break;
-          case 3: 
-            { System.out.println(" -> Encontrei um digito");
-            } 
-            // fall through
-          case 6: break;
+          case 4: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }
